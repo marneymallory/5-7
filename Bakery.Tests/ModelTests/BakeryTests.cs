@@ -1,12 +1,22 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery.Models;
+using BakeryMenu.Models;
 
-namespace Baked.Tests
+namespace BakeryMenu.Tests
 {
   [TestClass]
-  public class BakeryTests
+  public class BreadTests : IDisposable
   {
-    // Test methods will go here.
+    public void Dispose()
+    {
+      Bread.ClearAll();
+    }
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+    
 
   }
 }
