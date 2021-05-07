@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+Scrabble.Solution // corresponds to repo name, git initialized here
+├── Scrabble
+│   ├── Scrabble.csproj
+│   ├── Program.cs
+│  └── Models/
+└── Scrabble.Tests
+    ├── Scrabble.csproj
+    └── ModelTests
+
+Erik's Example
+
+ProjectName.Solution
+├── ProjectName
+│   └── ProjectName.csproj
+│   └── Program.cs <-------------------------- Here.
+│   └── Models
+│        └── ClassName.cs
+└── ProjectName.Tests
+    └── ProjectName.Tests.csproj
+    └── ModelTests
+         └── ClassNameTests.cs
