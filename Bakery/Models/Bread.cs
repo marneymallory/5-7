@@ -20,6 +20,10 @@ namespace Bakery.Models
     {
       _instances.Clear();
     }
+    public int GetPrice()
+    {
+      return Amount * 5;
+    }
   }
 
 }
