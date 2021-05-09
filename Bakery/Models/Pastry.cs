@@ -22,7 +22,7 @@ namespace Bakery.Models
     }
     public int GetPrice()
     {
-      return Amount * 0;
+      return Amount * 2;
     }
     
   }
