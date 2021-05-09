@@ -18,8 +18,13 @@ namespace Bakery.TestTools
       Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
-  
-   
-
+    [TestMethod]
+    public void GetPrice_ReturnPrice_Int()
+    {
+      int amount = 1;
+      Pastry newPastry = new Pastry(amount);
+      int result = newPastry.GetPrice();
+      Assert.AreEqual(2, result);
+    } 
   }
 }
