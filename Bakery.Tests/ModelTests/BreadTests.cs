@@ -21,10 +21,18 @@ namespace Bakery.TestTools
     [TestMethod]
     public void GetPrice_ReturnPrice_Int()
     {
-     int amount = 1;
-     Bread newBread = new Bread(amount);
-    int result = newBread.GetPrice();
-    Assert.AreEqual(5, result);
+      int amount = 1;
+      Bread newBread = new Bread(amount);
+      int result = newBread.GetPrice();
+      Assert.AreEqual(5, result);
+    }
+    [TestMethod]
+    public void GetPrice_ReturnDeal_Int()
+    {
+      int amount = 4;
+      Bread newBread = new Bread(amount);
+      int result = newBread.GetPrice();
+      Assert.AreEqual(15, result);
     }
 
   }
