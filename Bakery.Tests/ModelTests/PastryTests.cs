@@ -33,6 +33,7 @@ namespace Bakery.TestTools
       Pastry newPastry = new Pastry(amount);
       int result = newPastry.GetPrice();
       Assert.AreEqual(5, result);
+      
     }
   }
 }
