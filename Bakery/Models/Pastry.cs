@@ -22,7 +22,8 @@ namespace Bakery.Models
     }
     public int GetPrice()
     {
-      return (Amount * 2 - (5/3)) ;
+      return (Amount * 2 - (5/3)) ; 
+      // WIP, still working on this formula
     }
     
   }
