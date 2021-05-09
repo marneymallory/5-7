@@ -26,5 +26,13 @@ namespace Bakery.TestTools
       int result = newPastry.GetPrice();
       Assert.AreEqual(2, result);
     } 
+     [TestMethod]
+    public void GetPrice_ReturnDeal_Int()
+    {
+      int amount = 3;
+      Pastry newPastry = new Pastry(amount);
+      int result = newPastry.GetPrice();
+      Assert.AreEqual(5, result);
+    }
   }
 }
