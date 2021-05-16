@@ -6,6 +6,7 @@ namespace Bakery.Models
   public class Pastry
   {
     public int Amount { get; set; }
+
     private static List<Pastry> _instances = new List<Pastry> { };
     public static List<Pastry> GetAll()
     {
@@ -22,8 +23,16 @@ namespace Bakery.Models
     }
     public int GetPrice()
     {
-      return (Amount * 2 - (5/3)) ; 
+      int PastryPrice = 2;
+      int TotalCost = 0;
+      // 8 * 2 = 16
+      // 16 - (8/3) = 14 (saving $2)
+      // 10 % 3 = 1
+      TotalCost = (Amount * PastryPrice);
+      TotalCost -= (Amount/3); 
+      return TotalCost;
       // WIP, still working on this formula
+      // could create public int ApplyDiscount()
     }
     
   }

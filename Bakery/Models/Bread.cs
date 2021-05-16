@@ -6,6 +6,8 @@ namespace Bakery.Models
   public class Bread 
   {
     public int Amount { get; set; }
+
+
     private static List<Bread> _instances = new List<Bread> { };
     public static List<Bread> GetAll()
     {
@@ -29,6 +31,8 @@ namespace Bakery.Models
   }
 
 }
+
+// 
 
 
 
