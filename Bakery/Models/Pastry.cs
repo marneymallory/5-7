@@ -25,14 +25,10 @@ namespace Bakery.Models
     {
       int PastryPrice = 2;
       int TotalCost = 0;
-      // 8 * 2 = 16
-      // 16 - (8/3) = 14 (saving $2)
-      // 10 % 3 = 1
       TotalCost = (Amount * PastryPrice);
       TotalCost -= (Amount/3); 
       return TotalCost;
-      // WIP, still working on this formula
-      // could create public int ApplyDiscount()
+    
     }
     
   }
